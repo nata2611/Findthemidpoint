@@ -1,10 +1,13 @@
 package com.example.android.findthemid_point;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     /* Counting the difference between the answer and the mid-point */
@@ -63,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
             else {
             result.setText("Dead heat!");
             }
+        Button smthInteresting = (Button) findViewById(R.id.smthInteresting);
+        smthInteresting.setVisibility(View.VISIBLE);
+  }
+    /** Called when the user taps the "Something Interesting..." button */
+  public void smthInteresting (View view){
+      Intent intent = new Intent(MainActivity.this, DisplayCard.class);
+      MainActivity.this.startActivity(intent);
+
   }
 
 }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/androidparty"/>
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alyona"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:text="Happy birthday, Алёнка!"
+        android:textColor="#64DD17"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#76FF03"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:text="From туса :)" />
+
+</RelativeLayout>
+
